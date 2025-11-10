@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Начинаем резервную копию..."
+cp -r #!/bin/bash
+
+echo "Начинаем резервную копию..."
+cp -r ~/Documents ~/Documents_backup
+echo "Готово! Копия создана в ~/Documents_backup"
+/test_beckup1 ~/Test_beckup2
+echo "Готово! Копия создана в ~/Test"

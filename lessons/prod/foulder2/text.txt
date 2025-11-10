@@ -1,0 +1,8 @@
+1. pwd
+2. mkdir
+3. ls
+4. cd
+5. cd ..
+6. rm -r
+7. touch [имя файла]
+8. nano
