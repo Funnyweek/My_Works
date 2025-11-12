@@ -10,21 +10,21 @@
 # b = input("number2")
 
 # print( a + "  " + b)
+def main():
+	try:
+		f = int(input("Введите первое число: "))
+		d = int(input("Введите второе число: "))
+	except ValueError:
+		print("Ошибка: введите целые числа")
+		return
 
-# age = int(input("Enter your age: "))
+	if f > d:
+		print(f"{f} больше, чем {d}")
+	elif f < d:
+		print(f"{d} больше, чем {f}")
+	else:
+		print("Числа равны")
 
-# print( age + 5)
 
-# kzt = int(input("Enter amount in KZT: "))
-# print(kzt * 500)
-
-light = int(input("sm"))
-wight = int(input("sm"))
-
-print(light * wight, "sm^2", {light}, "sm *",  {wight}, "sm")
-
-# age = int(input("Enter your age: "))
-# if age >= 18:
-#     print("You will have")
-# else:
-#     print("You wont")
+if __name__ == "__main__":
+	main()
