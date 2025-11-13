@@ -60,12 +60,15 @@
 # list.reverse()
 # print(list)
 
-list = ["A", "B", "C", "D"]
-print(list)
-a = input()
-b = input()
-c = list.insert(a, f"{b}")
-print(list)
-n = input()
-no = list.pop(n)
-print(list)
+# list = ["A", "B", "C", "D"]
+# print(list)
+# a = int(input())
+# b = int(input())
+# c = list.insert(a, b)
+# print(list)
+# n = input()
+# no = list.pop(n)
+# print(list)
+
+
+
