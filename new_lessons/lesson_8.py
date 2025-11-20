@@ -33,4 +33,6 @@ c = ()
 c = str(b)
 with open("text.txt", "w") as file_2:
     file_2.write(c)
-    
+
+
+
