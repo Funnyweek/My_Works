@@ -1,3 +1,5 @@
 git add . 
-git commit -m "123"
-git push origin master 
+read name
+git commit -m "$name"
+read len
+git push origin $len
