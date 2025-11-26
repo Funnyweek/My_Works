@@ -160,15 +160,15 @@
 # 4. Используйте extend() для объединения списков
 
 
-numbers = [1, 2, 3, 4]
-letters = ['a', 'b', 'c']
-a = []
-b = []
-for i in numbers:
-    for j in letters:
-        a.append(i)
-        b.append(j)
-print(a)
-print(b)
-for i in range(len(a)):
-    print(f"{a[i]}-{b[i]}")
+# numbers = [1, 2, 3, 4]
+# letters = ['a', 'b', 'c']
+# a = []
+# b = []
+# for i in numbers:
+#     for j in letters:
+#         a.append(i)
+#         b.append(j)
+# print(a)
+# print(b)
+# for i in range(len(a)):
+#     print(f"{a[i]}-{b[i]}")
