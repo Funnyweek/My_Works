@@ -73,21 +73,21 @@
 # ...
 # ✓ 297 фотографий сохранено в breed_photos.txt
 
-import requests
+# import requests
 
-dog = input(">>>").strip().lower()
-url = f"https://dog.ceo/api/breed/{dog}/images"
+# dog = input(">>>").strip().lower()
+# url = f"https://dog.ceo/api/breed/{dog}/images"
 
-resp = requests.get(url)
-data = resp.json()
+# resp = requests.get(url)
+# data = resp.json()
 
-if data["status"] != "success":
-    print("NO")
-else:
-    photos = data["message"]
-    print(f"{len(photos)}")
-    for i,a in enumerate(photos[:5], start=1):
-        print(f"{i}:{a}")
-    with open("photo.txt", "a") as file:
-        for s in photos:
-            file.write(f"{s} \n")
+# if data["status"] != "success":
+#     print("NO")
+# else:
+#     photos = data["message"]
+#     print(f"{len(photos)}")
+#     for i,a in enumerate(photos[:5], start=1):
+#         print(f"{i}:{a}")
+#     with open("photo.txt", "a") as file:
+#         for s in photos:
+#             file.write(f"{s} \n")
