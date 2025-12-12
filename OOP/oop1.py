@@ -150,3 +150,53 @@ print(lamp1.turn_on())     # Philips включена
 print(lamp1.get_status())  # Лампа включена
 print(lamp1.turn_off())    # Philips выключена
 print(lamp1.get_status())  # Лампа выключена
+
+
+
+
+# 1. Создайте класс Wallet
+# 2. В __init__ сохраняйте: owner (владелец), balance (количество денег)
+# 3. Добавьте метод add_money(amount), который:
+#    - Добавляет amount к balance
+#    - Возвращает "{owner} пополнил кошелек на {amount}. Баланс: {balance}"
+# 4. Добавьте метод spend_money(amount), который:
+#    - Если amount <= balance: вычитает amount, возвращает "{owner} потратил {amount}. Баланс: {balance}"
+#    - Если amount > balance: возвращает "Недостаточно денег!"
+# 5. Добавьте метод get_balance(), который возвращает "У {owner} есть {balance} тенге"
+# 6. Создайте 2 объекта и используйте все методы
+#
+# Примеры:
+# wallet1 = Wallet("Алиса", 1000)
+# print(wallet1.get_balance())      → У Алиса есть 1000 тенге
+# print(wallet1.spend_money(300))   → Алиса потратила 300. Баланс: 700
+# print(wallet1.get_balance())      → У Алиса есть 700 тенге
+# print(wallet1.add_money(500))     → Алиса пополнила кошелек на 500. Баланс: 1200
+# print(wallet1.spend_money(2000))  → Недостаточно денег!
+
+
+
+class Wallet:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def add_money(self, amount):
+        self.balance += amount
+        return f"{self.owner} пополнил кошелек на {amount}. Баланс: {self.balance}"
+
+    def spend_money(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            return f"{self.owner} потратил {amount}. Баланс: {self.balance}"
+        else:
+            return "Недостаточно денег!"
+
+    def get_balance(self):
+        return f"У {self.owner} есть {self.balance} тенге"
+
+wallet1 = Wallet("Алиса", 1000)
+print(wallet1.get_balance())      # У Алиса есть 1000 тенге
+print(wallet1.spend_money(300))   # Алиса потратила 300. Баланс: 700
+print(wallet1.get_balance())      # У Алиса есть 700 тенге
+print(wallet1.add_money(500))     # Алиса пополнила кошелек на 500. Баланс: 1200
+print(wallet1.spend_money(2000))  # Недостаточно денег!
